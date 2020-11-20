@@ -60,6 +60,7 @@ body {
   -moz-osx-font-smoothing: antialiased;
   font-smoothing: antialiased;
   min-width: 320px;
+  overflow: hidden;
 }
 
 /* Начало подключения шрифтов TT Norms */
@@ -247,11 +248,6 @@ body {
   .body {
     min-height: calc(100vh - 30px);
   }
-
-  .styles {
-    position: fixed;
-    bottom: 0;
-  }
 }
 
 /* @media only screen and (max-device-width: 1290px) {} */
@@ -297,6 +293,9 @@ body {
 
   .styles {
     position: relative;
+  }
+  body{
+    overflow: auto;
   }
 }
 
