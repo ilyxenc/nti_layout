@@ -385,6 +385,10 @@ body {
     transform: rotate(52deg);
     z-index: 1;
   }
+
+  .item {
+    margin: 0;
+  }
 }
 
 @media only screen and (max-device-width: 625px) {
