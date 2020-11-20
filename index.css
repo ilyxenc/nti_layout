@@ -150,18 +150,18 @@ body {
 }
 
 .margin3 {
-  margin-top: -200px;
+  margin-top: -250px;
 }
 
 .caption1 {
-  font: 36px/46px TTNorms-Medium;
+  font: 36px/36px TTNorms-Medium;
   color: #FFF;
   text-transform: uppercase;
   margin-left: 2px;
 }
 
 .caption2 {
-  font: 72px/82px TTNorms-ExtraBold;
+  font: 62px/62px TTNorms-ExtraBold;
   color: #FFF;
   text-transform: uppercase;
   letter-spacing: -3px;
@@ -172,7 +172,7 @@ body {
 }
 
 .caption3 {
-  font: 36px/38px TTNorms-Bold;
+  font: 30px/30px TTNorms-Bold;
   color: #04FAC8;
   text-transform: uppercase;
   margin-left: 2px;
@@ -199,7 +199,7 @@ body {
 }
 
 .itemP1 {
-  font: 48px/57px TTNorms-Bold;
+  font: 48px/48px TTNorms-Bold;
   color: #00CEAA;
   margin-bottom: 5px;
 }
