@@ -228,7 +228,7 @@ body {
   height: auto;
 }
 
-@media only screen and (max-device-width: 1440px) {
+@media only screen and (max-device-width: 1600px) {
   .headerMaxWidth {
     max-width: 1170px;
   }
@@ -242,11 +242,39 @@ body {
   }
 
   .margin3 {
-    margin: 0;
+    margin-top: -140px;
   }
 
   .body {
     min-height: calc(100vh - 30px);
+  }
+
+  .caption3 {
+    font: 26px/28px TTNorms-Bold;
+  }
+
+  .caption2 {
+    font: 52px/62px TTNorms-ExtraBold;
+  }
+
+  .caption1 {
+    font: 26px/36px TTNorms-Medium;
+  }
+
+  .itemP1 {
+    font: 38px/47px TTNorms-Bold;
+  }
+
+  .itemP2 {
+    font: 12px/14px TTNorms-Medium;
+  }
+
+  .list {
+    justify-content: flex-start;
+  }
+
+  .item {
+    margin-right: 30px;
   }
 }
 
