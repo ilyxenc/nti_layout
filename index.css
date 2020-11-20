@@ -128,7 +128,7 @@ body {
 }
 
 .logo {
-  width: 405px;
+  width: 350px;
   height: auto;
   display: block;
 }
@@ -136,7 +136,7 @@ body {
 .name {
   margin-top: 20px;
   margin-left: 92px;
-  width: 310px;
+  width: 250px;
   height: auto;
   display: block;
 }
