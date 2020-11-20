@@ -1,0 +1,415 @@
+a {
+  text-decoration: none;
+  outline: none;
+  color: inherit;
+}
+
+input, textarea, select {
+  outline: none;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+:root {
+  --font: Arial, sans-serif;
+  --bgColor: #FC2C38;
+  --bgHoverColor: #D21924;
+}
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, a, img, small, strike, strong, b, i, ol, ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-text-size-adjust: none;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+li, form, label, table, tbody, tfoot, thead, tr, th, td, canvas, footer, header, menu, nav, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 0;
+  font: inherit;
+  vertical-align: baseline;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 0;
+  background: #FFFFFF;
+  color: #333333;
+  text-align: center;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  min-width: 320px;
+}
+
+/* Начало подключения шрифтов TT Norms */
+@font-face {
+  font-family: 'TTNorms-Medium';
+  src: url(./font/TTNorms-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'TTNorms-Bold';
+  src: url(./font/TTNorms-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'TTNorms-ExtraBold';
+  src: url(./font/TTNorms-ExtraBold.ttf);
+}
+
+/* Заканчивается подключение шрифтов */
+.body {
+  background-size: 100%;
+  background-image: url(./images/background.png);
+  width: 100%;
+  /* min-height: 100vh; */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.ellipse {
+  position: absolute;
+  width: 445px;
+  height: 767px;
+  left: 75px;
+  top: -243px;
+  background: #06032B;
+  filter: blur(250px);
+  transform: rotate(52deg);
+  z-index: 1;
+}
+
+.block {
+  position: relative;
+  z-index: 3;
+}
+
+.headerMaxWidth {
+  max-width: 1600px;
+  width: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.maxWidth {
+  max-width: 1170px;
+  width: auto;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.header {
+  padding-top: 41px;
+}
+
+.logo {
+  width: 405px;
+  height: auto;
+  display: block;
+}
+
+.name {
+  margin-top: 20px;
+  margin-left: 92px;
+  width: 310px;
+  height: auto;
+  display: block;
+}
+
+.margin1 {
+  margin-top: 65px;
+}
+
+.margin2 {
+  margin-top: 37px;
+}
+
+.margin3 {
+  margin-top: -200px;
+}
+
+.caption1 {
+  font: 36px/46px TTNorms-Medium;
+  color: #FFF;
+  text-transform: uppercase;
+  margin-left: 2px;
+}
+
+.caption2 {
+  font: 72px/82px TTNorms-ExtraBold;
+  color: #FFF;
+  text-transform: uppercase;
+  letter-spacing: -3px;
+}
+
+.caption2 span {
+  color: #00CEAA;
+}
+
+.caption3 {
+  font: 36px/38px TTNorms-Bold;
+  color: #04FAC8;
+  text-transform: uppercase;
+  margin-left: 2px;
+}
+
+.marginCaption1 {
+  margin-bottom: 25px;
+}
+
+.marginCaption2 {
+  margin-bottom: 15px;
+}
+
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.item {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+
+.itemP1 {
+  font: 48px/57px TTNorms-Bold;
+  color: #00CEAA;
+  margin-bottom: 5px;
+}
+
+.itemP2 {
+  font: 18px/18px TTNorms-Medium;
+  color: #00CEAA;
+  text-transform: uppercase;
+}
+
+.styles {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.style1920 {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.style1440, .style1024 {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-device-width: 1440px) {
+  .headerMaxWidth {
+    max-width: 1170px;
+  }
+
+  .style1920 {
+    display: none;
+  }
+
+  .style1440 {
+    display: block;
+  }
+
+  .margin3 {
+    margin: 0;
+  }
+
+  .body {
+    min-height: calc(100vh - 30px);
+  }
+
+  .styles {
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+/* @media only screen and (max-device-width: 1290px) {} */
+@media only screen and (max-device-width: 1024px) {
+  .body {
+    background-size: cover;
+  }
+
+  .headerMaxWidth, .maxWidth {
+    max-width: 960px;
+  }
+
+  .style1440 {
+    display: none;
+  }
+
+  .style1024 {
+    display: block;
+  }
+
+  .list {
+    flex-wrap: wrap;
+  }
+
+  .itemP1 {
+    font-size: 70px;
+    line-height: auto;
+  }
+
+  .item {
+    width: 33.3%;
+    justify-content: center;
+    margin-bottom: 35px;
+  }
+
+  .margin2 {
+    margin-top: 80px;
+  }
+
+  .margin3 {
+    margin-top: 30px;
+  }
+
+  .styles {
+    position: relative;
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .headerMaxWidth, .maxWidth {
+    max-width: 718px;
+  }
+
+  .logo {
+    width: 300px;
+  }
+
+  .name {
+    margin: 0;
+    width: 300px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .caption2 {
+    font-size: 62px;
+    line-height: 62px;
+  }
+
+  .body {
+    background: none;
+  }
+
+  body {
+    background-size: cover;
+    background-image: url(./images/background.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+
+  .itemP1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  .margin3 {
+    margin-top: 80px;
+  }
+  .ellipse {
+    position: absolute;
+    width: 220px;
+    height: 380px;
+    left: 0px;
+    top: -120px;
+    background: #06032B;
+    filter: blur(250px);
+    transform: rotate(52deg);
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-device-width: 425px) {
+  .header {
+    display: block;
+  }
+
+  .headerMaxWidth, .maxWidth {
+    margin: 0 20px;
+  }
+
+  .logo, .name {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .name {
+    margin-top: 20px;
+  }
+
+  .caption3 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .margin1 {
+    margin-top: 80px;
+  }
+
+  .caption2 {
+    font-size: 29px;
+    line-height: 29px;
+  }
+
+  .caption1 {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .margin2 {
+    margin-top: 80px;
+  }
+
+  .item {
+    width: 50%;
+  }
+
+  .itemP1 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .itemP2 {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
